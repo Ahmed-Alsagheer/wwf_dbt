@@ -1,0 +1,36 @@
+version: 2
+sources:
+  - name: raw
+    database: AIRBYTE_DATABASE
+    schema: AIRBYTE_SCHEMA
+    tables:
+      - name: Account
+      - name: AccountHistory
+      - name: Campaign
+      - name: CampaignHistory
+      - name: CampaignMember
+      - name: Commitment__c
+      - name: Commitment__History
+      - name: Contact
+      - name: ContactHistory
+      - name: cpm__Installment__c
+      - name: cpm__Mandate__c
+      - name: cpm__Payment__c
+      - name: cpm__Payment_Profile__c
+      - name: Family_Membership_Member__c
+      - name: npe03__Recurring_Donation__c
+      - name: npe03__Recurring_Donation__History
+      - name: npe5__Affiliation__c
+      - name: npsp__Address__c
+      - name: npsp__Allocation__c
+      - name: npsp__General_Accounting_Unit__c
+      - name: Opportunity
+      - name: OpportunityFieldHistory
+      - name: Order
+        quoting:
+          identifier: true
+      - name: OrderItem
+      - name: Pricebook2
+      - name: Product2
+      - name: Product2History
+      - name: RecordType
